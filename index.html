@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock, Paper, Scissors</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="cmp_choice">Computer's Choice</h1>
+        <img id="computer_choice" src="Images/Unknown.png">
+        <br>
+        <h1 id="plyr_choice">Player's Choice</h1>
+        
+        <div class="button-container">
+            <button class="button">
+                <img id="rock" class="img" src="Images/Rock.png">
+                <img id="rock_hover" class="img_hover" src="Images/Rock (Hover).png" onclick="playGame('Rock')">
+            </button>
+                
+            <button class="button">
+                <img id="paper" class="img" src="Images/Paper.png">
+                <img id="paper_hover" class="img_hover" src="Images/Paper (Hover).png" onclick="playGame('Paper')">
+            </button>
+                        
+            <button class="button">
+                <img id="scissors" class="img" src="Images/Scissors.png">
+                <img id="scissors_hover" class="img_hover" src="Images/Scissors (Hover).png" onclick="playGame('Scissors')">
+            </button>
+        </div>
+        
+        <canvas id="canvas" width=1920 height=1080 style="border: 0px solid #000000;"></canvas>
+
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
